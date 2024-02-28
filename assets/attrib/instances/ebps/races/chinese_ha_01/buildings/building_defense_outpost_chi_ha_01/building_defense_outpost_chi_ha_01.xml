@@ -1,0 +1,50 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="218940765" List.ParentItemID="218940765">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\chinese\buildings\defense_outpost_chi\defense_outpost_control_chi" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-267688280" List.ParentItemID="-267688280">
+			<bool name="can_repair" value="True" overrideParent="True" />
+			<enum_table name="armor_scaler_by_damage_type">
+				<float name="Fire" value="0" overrideParent="True" />
+			</enum_table>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1252647578" List.ParentItemID="-1252647578">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\chinese_ha_01" overrideParent="True" List.ItemID="1792273795" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1373852265" List.ParentItemID="-1373852265">
+			<list name="standard_upgrades" removedIds="1752217260, 503221484, 266545464, -1705967359">
+				<instance_reference name="upgrade" value="upgrade\races\chinese\research\upgrade_outpost_handcannonslits_chi" mod="a1671e9927bb4596a34f973345db45c2" overrideParent="True" List.ItemID="1404602718" List.ListAction="Append" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_springald" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="-370629295" List.ListAction="Append" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_cannon" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="-1417890251" List.ListAction="Append" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_stone" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="754288916" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\site_ext" List.ItemID="-1847702208" List.ParentItemID="-1847702208">
+			<bool name="snap_to_construction_grid" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="107295530" List.ParentItemID="107295530">
+			<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="439292286" List.ParentItemID="439292286">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="1609231476" List.ParentItemID="1609231476">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="1410486982" List.ParentItemID="1410486982">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\chinese\weapons\wpn_siege_outpost_handcannon_chi" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="7167197" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_outpost" mod="a1671e9927bb4596a34f973345db45c2" />
+</instance>

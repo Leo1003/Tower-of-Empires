@@ -1,0 +1,38 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="218940765" List.ParentItemID="218940765">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\ottoman\buildings\defense_outpost_ott\defense_outpost_control_ott" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1252647578" List.ParentItemID="-1252647578">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\ottoman" overrideParent="True" List.ItemID="-1553120219" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1373852265" List.ParentItemID="-1373852265">
+			<list name="standard_upgrades" removedIds="1752217260, 503221484, 266545464, -1705967359">
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_arrowslits" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="1404602718" List.ListAction="Append" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_springald" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="-370629295" List.ListAction="Append" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_cannon" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="-1417890251" List.ListAction="Append" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_stone" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="754288916" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hold_ext" List.ItemID="979215888" List.ParentItemID="979215888">
+			<list name="acceptable_types" overrideParent="True">
+				<enum name="acceptable_type" value="hold_infantry" List.ItemID="-1759008413" />
+				<enum name="acceptable_type" value="hold_infantry_ranged" List.ItemID="374001186" />
+				<enum name="acceptable_type" value="hold_villager" List.ItemID="-1604677819" />
+				<enum name="acceptable_type" value="hold_monk" List.ItemID="1114215610" />
+				<enum name="acceptable_type" value="hold_cavalry" List.ItemID="-1130716129" />
+				<enum name="acceptable_type" value="hold_khan" List.ItemID="372671965" />
+				<enum name="acceptable_type" value="hold_trader" List.ItemID="-1214169504" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\modifier_apply_ext" List.ItemID="-1821710553" List.ListAction="Append">
+			<list name="modifiers">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2034591" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_outpost" mod="a1671e9927bb4596a34f973345db45c2" />
+</instance>

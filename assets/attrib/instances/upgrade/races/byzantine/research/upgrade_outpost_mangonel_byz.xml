@@ -1,0 +1,77 @@
+<instance version="4" description="Adds archers to the castle" template="upgrade">
+	<group name="upgrade_bag">
+		<group name="ui_info">
+			<string name="hotkey_name" value="W" overrideParent="True" />
+			<file name="icon_name" value="races\byzantine\upgrades\mangonel_emplacement" overrideParent="True" />
+			<string name="tooltip_data_template" value="UniqueBuildingUpgradeDataTemplate" overrideParent="True" />
+		</group>
+		<list name="requirements" overrideParent="True">
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-102980056">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="True" />
+				<int name="max_completed" value="100" />
+				<int name="min_completed" value="1" />
+				<instance_reference name="upgrade_name" value="upgrade\dev\ages\castle_age" overrideParent="True" />
+				<bool name="include_queued" value="False" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="1990437556">
+				<enum name="reason" value="usage" />
+				<locstring name="ui_name" value="11150626" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\races\byzantine\research\upgrade_outpost_mangonel_byz" mod="a1671e9927bb4596a34f973345db45c2" overrideParent="True" />
+				<bool name="include_queued" value="True" />
+				<int name="min_completed" value="1" />
+				<int name="max_completed" value="100" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="1124489838">
+				<enum name="reason" value="usage_and_display" />
+				<locstring name="ui_name" value="0" />
+				<bool name="is_present" value="False" />
+				<instance_reference name="upgrade_name" value="upgrade\races\byzantine\research\upgrade_outpost_mangonel_byz" mod="a1671e9927bb4596a34f973345db45c2" overrideParent="True" />
+				<bool name="include_queued" value="False" />
+				<int name="min_completed" value="1" />
+				<int name="max_completed" value="100" />
+				<group name="include_pbg_parenting">
+					<bool name="include_child_pbgs" value="False" />
+					<bool name="include_parent_pbgs" value="False" />
+				</group>
+				<bool name="include_completed" value="True" />
+			</template_reference>
+		</list>
+		<group name="state_tree_references">
+			<template_reference name="on_action_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="upgrade_outpost\upgrade_outpost_mangonel_byz" overrideParent="True" />
+			</template_reference>
+		</group>
+		<group name="ui_codex_info">
+			<int name="priority" value="4800" overrideParent="True" />
+		</group>
+		<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_outpost\tech_outpost_mangonel_byz" overrideParent="True" />
+		<group name="time_cost">
+			<enum_table name="cost">
+				<float name="stone" value="125" overrideParent="True" />
+				<float name="gold" value="50" overrideParent="True" />
+			</enum_table>
+		</group>
+		<list name="upgrade_type" overrideParent="True">
+			<enum name="upgrade_type" value="military_upgrade" List.ItemID="-967437217" />
+			<enum name="upgrade_type" value="byzantine_upgrade" List.ItemID="-1685566960" />
+			<enum name="upgrade_type" value="scar_military_upgrade" List.ItemID="1441186288" />
+			<enum name="upgrade_type" value="scar_nontiered_upgrade" List.ItemID="1658607908" />
+			<enum name="upgrade_type" value="scar_castle_age_upgrade" List.ItemID="-636971788" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="2126337" />
+	<instance_reference name="parent_pbg" value="upgrade\races\common\research\upgrade_outpost_springald" mod="a1671e9927bb4596a34f973345db45c2" />
+</instance>

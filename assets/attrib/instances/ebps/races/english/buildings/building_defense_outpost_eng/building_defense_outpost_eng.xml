@@ -1,0 +1,88 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="218940765" List.ParentItemID="218940765">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\english\buildings\defense_outpost_eng\defense_outpost_layout_eng" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1252647578" List.ParentItemID="-1252647578">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\english" List.ItemID="1699051565" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="924983296" List.ParentItemID="924983296">
+			<bool name="use_construction_range_on_selection" value="True" comment="Network of Castles bonus is the reason for this selection range difference" overrideParent="True" />
+			<bool name="use_combat_range_on_selection" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-1373852265" List.ParentItemID="-1373852265">
+			<list name="standard_upgrades" removedIds="1752217260, 503221484, 266545464, -1705967359">
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_arrowslits" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="1404602718" List.ListAction="Append" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_springald" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="-370629295" List.ListAction="Append" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_cannon" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="-1417890251" List.ListAction="Append" />
+				<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_stone" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="754288916" List.ListAction="Append" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="-1516380831" List.ParentItemID="-1516380831">
+			<instance_reference name="ui_range" value="ui_reticule\weapon_range" overrideParent="True" />
+			<bool name="show_ability_range_in_construction_item_preview" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="107295530" List.ParentItemID="107295530">
+			<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="205991785" List.ParentItemID="205991785">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="1963768442" />
+				<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="2099939151" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\english\tower_outpost_alert_aura_eng" List.ItemID="1546673461" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="1004449302" List.ParentItemID="1004449302">
+			<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\english\outpost_eng" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="166244" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_outpost" mod="a1671e9927bb4596a34f973345db45c2" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-815704541" List.ParentItemID="-815704541">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\english\buildings\defense_outpost_eng\defense_outpost_layout_eng" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1722586674" List.ParentItemID="1722586674">
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\english" List.ItemID="131059069" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-1575163024" List.ParentItemID="-1575163024">
+				<bool name="use_construction_range_on_selection" value="True" comment="Network of Castles bonus is the reason for this selection range difference" overrideParent="True" />
+				<bool name="use_combat_range_on_selection" value="False" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\upgrade_ext" List.ItemID="-464917905" List.ParentItemID="-464917905">
+				<list name="standard_upgrades" removedIds="-991065854, 1048705886, -1242235003, 92381048">
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_arrowslits" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="1404602718" List.ListAction="Append" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_springald" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="-370629295" List.ListAction="Append" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_cannon" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="-1417890251" List.ListAction="Append" />
+					<instance_reference name="upgrade" value="upgrade\races\common\research\upgrade_outpost_stone" mod="a1671e9927bb4596a34f973345db45c2" List.ItemID="754288916" List.ListAction="Append" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="79734086" List.ParentItemID="79734086">
+				<instance_reference name="ui_range" value="ui_reticule\weapon_range" overrideParent="True" />
+				<bool name="show_ability_range_in_construction_item_preview" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\spawner_ext" List.ItemID="-1281899015" List.ParentItemID="-1281899015">
+				<instance_reference name="rally_pass_type" value="pass_types\infantry" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="14252640" List.ParentItemID="14252640">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle" List.ItemID="-1084138194" />
+					<instance_reference name="ability" value="abilities\modal_abilities\core\town_bell\hold_return_to_work" List.ItemID="-1294703640" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\english\tower_outpost_alert_aura_eng" List.ItemID="118896133" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-2059439601" List.ParentItemID="-2059439601">
+				<instance_reference name="schema" value="statemodel_schema\buildings\civilizations\english\outpost_eng" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="166244" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_outpost" mod="a1671e9927bb4596a34f973345db45c2" />
+	</variant>
+</instance>

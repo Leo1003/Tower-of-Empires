@@ -1,0 +1,72 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1530558235" List.ParentItemID="-1530558235">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\abbasid\buildings\building_defense_wall_abb\building_defense_wall_stone_tower_abb" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1445076195" List.ParentItemID="-1445076195">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="-170332345" />
+				<enum name="unit_type" value="building" List.ItemID="1752735514" />
+				<enum name="unit_type" value="tower" List.ItemID="1784399150" />
+				<enum name="unit_type" value="defensive_structure" List.ItemID="-1084854436" />
+				<enum name="unit_type" value="siegeable" List.ItemID="555500267" />
+				<enum name="unit_type" value="has_default_building_weapons" List.ItemID="-521797996" />
+				<enum name="unit_type" value="stone_wall_tower" List.ItemID="795846968" />
+				<enum name="unit_type" value="golden_age_tier_1_building_abb" List.ItemID="877839840" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="697932786" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="-906946627" List.ParentItemID="-906946627">
+			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_dependent">
+				<instance_reference name="depends_on_blueprint" value="ebps\races\abbasid\buildings\building_defense_wall_abb" overrideParent="True" />
+			</template_reference>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1739639308" List.ParentItemID="-1739639308">
+			<list name="abilities" overrideParent="True">
+				<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle_no_enemies" overrideParent="True" List.ItemID="-1311481835" />
+				<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\passives\golden_age_bonus_1_abb" List.ItemID="31395487" />
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="199627" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_tower" mod="a1671e9927bb4596a34f973345db45c2" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1412792241" List.ParentItemID="-1412792241">
+				<instance_reference name="animator_attachments" value="attachments\attachment_lists\civilizations\abbasid\buildings\building_defense_wall_abb\building_defense_wall_stone_tower_abb" overrideParent="True" />
+				<bool name="browsable_in_editor" value="True" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1273725928" List.ParentItemID="1273725928">
+				<list name="unit_type_list" overrideParent="True">
+					<enum name="unit_type" value="military" List.ItemID="206851472" />
+					<enum name="unit_type" value="building" List.ItemID="745161469" />
+					<enum name="unit_type" value="tower" List.ItemID="197149943" />
+					<enum name="unit_type" value="defensive_structure" List.ItemID="1127320239" />
+					<enum name="unit_type" value="siegeable" List.ItemID="-1630487594" />
+					<enum name="unit_type" value="has_default_building_weapons" List.ItemID="-1883765266" />
+					<enum name="unit_type" value="stone_wall_tower" List.ItemID="-1876344683" />
+					<enum name="unit_type" value="golden_age_tier_1_building_abb" List.ItemID="619770915" />
+				</list>
+				<list name="race_type_list" overrideParent="True">
+					<instance_reference name="race_type" value="racebps\abbasid" List.ItemID="2109752996" />
+				</list>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="2041942889" List.ParentItemID="2041942889">
+				<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_dependent">
+					<instance_reference name="depends_on_blueprint" value="ebps\races\abbasid\buildings\building_defense_wall_abb" overrideParent="True" />
+				</template_reference>
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-1339287724" List.ParentItemID="-1339287724">
+				<list name="abilities" overrideParent="True">
+					<instance_reference name="ability" value="abilities\timed_abilities\civ_core\core_building_scuttle_no_enemies" overrideParent="True" List.ItemID="-596418862" />
+					<instance_reference name="ability" value="abilities\always_on_abilities\abbasid\passives\golden_age_bonus_1_abb" List.ItemID="518933608" />
+				</list>
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="199627" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_tower" mod="a1671e9927bb4596a34f973345db45c2" />
+	</variant>
+</instance>

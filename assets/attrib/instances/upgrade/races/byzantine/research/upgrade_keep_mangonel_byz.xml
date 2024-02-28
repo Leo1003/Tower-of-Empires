@@ -1,0 +1,30 @@
+<instance version="4" description="Adds archers to the castle" template="upgrade">
+	<group name="upgrade_bag">
+		<group name="ui_info">
+			<file name="icon_name" value="races\byzantine\upgrades\mangonel_emplacement" overrideParent="True" />
+			<string name="hotkey_name" value="Q" overrideParent="True" />
+			<string name="tooltip_data_template" value="UniqueBuildingUpgradeDataTemplate" overrideParent="True" />
+		</group>
+		<list name="upgrade_type" overrideParent="True">
+			<enum name="upgrade_type" value="military_upgrade" List.ItemID="-502139585" />
+			<enum name="upgrade_type" value="byzantine_upgrade" List.ItemID="-382669333" />
+			<enum name="upgrade_type" value="scar_military_upgrade" List.ItemID="188701048" />
+			<enum name="upgrade_type" value="scar_nontiered_upgrade" List.ItemID="-1376036134" />
+			<enum name="upgrade_type" value="scar_castle_age_upgrade" List.ItemID="661537854" />
+		</list>
+		<group name="time_cost">
+			<enum_table name="cost">
+				<float name="stone" value="125" overrideParent="True" />
+				<float name="gold" value="50" overrideParent="True" />
+			</enum_table>
+		</group>
+		<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_keep\tech_upgrade_mangonel_emplacement_byz" overrideParent="True" />
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="1587394926" List.ParentItemID="1587394926">
+				<instance_reference name="upgrade_name" value="upgrade\races\common\research\upgrade_keep_springald" overrideParent="True" />
+			</template_reference>
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="2129278" />
+	<instance_reference name="parent_pbg" value="upgrade\races\common\research\upgrade_keep_springald" mod="a1671e9927bb4596a34f973345db45c2" />
+</instance>
