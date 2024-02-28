@@ -232,7 +232,6 @@
 						<list name="satisfying_entity_groups" overrideParent="True">
 							<group name="satisfying_entity_group" comment="Elzbach Palace&#xD;&#xA;" List.ItemID="1110364739">
 								<list name="satisfying_entities">
-									<instance_reference name="entity" value="ebps\races\hre\buildings\building_landmark_age3_eltz_castle_hre\building_landmark_age3_eltz_castle_hre" overrideParent="True" List.ItemID="-146363313" />
 								</list>
 							</group>
 						</list>

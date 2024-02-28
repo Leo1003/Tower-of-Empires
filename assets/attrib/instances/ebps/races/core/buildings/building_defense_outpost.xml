@@ -598,7 +598,7 @@
 										<string name="parent_rigidbody_target_name" value="" />
 										<enum name="game_object_attachment_type" value="scenegraph" />
 									</template_reference>
-									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_siege_outpost_springald" />
+									<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_siege_outpost_springald" mod="a1671e9927bb4596a34f973345db45c2" />
 									<group name="attachment_flags">
 										<bool name="sim_only" value="False" />
 										<bool name="no_pathfinding" value="False" />
@@ -1944,7 +1944,7 @@
 											<string name="parent_rigidbody_target_name" value="" />
 											<enum name="game_object_attachment_type" value="scenegraph" />
 										</template_reference>
-										<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_siege_outpost_springald" />
+										<instance_reference name="ebp" value="ebps\races\core\weapons\wpn_siege_outpost_springald" mod="a1671e9927bb4596a34f973345db45c2" />
 										<group name="attachment_flags">
 											<bool name="sim_only" value="False" />
 											<bool name="no_pathfinding" value="False" />

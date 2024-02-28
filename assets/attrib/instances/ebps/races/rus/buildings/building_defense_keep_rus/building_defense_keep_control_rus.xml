@@ -76,6 +76,6 @@
 			</list>
 		</template_reference>
 	</list>
-	<uniqueid name="pbgid" value="133437" />
+	<uniqueid name="pbgid" value="1073741823" />
 	<instance_reference name="parent_pbg" value="ebps\races\core\buildings\building_defense_keep" mod="a1671e9927bb4596a34f973345db45c2" />
 </instance>

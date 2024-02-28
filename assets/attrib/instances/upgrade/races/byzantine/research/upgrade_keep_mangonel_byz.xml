@@ -21,7 +21,7 @@
 		<instance_reference name="hotkey_binding" value="hotkeys\hotkey_binding\building_keep\tech_upgrade_mangonel_emplacement_byz" overrideParent="True" />
 		<list name="requirements">
 			<template_reference name="required" value="requirements\required_entity_upgrade" List.ItemID="1587394926" List.ParentItemID="1587394926">
-				<instance_reference name="upgrade_name" value="upgrade\races\common\research\upgrade_keep_springald" overrideParent="True" />
+				<instance_reference name="upgrade_name" value="upgrade\races\common\research\upgrade_keep_springald" mod="a1671e9927bb4596a34f973345db45c2" overrideParent="True" />
 			</template_reference>
 		</list>
 	</group>

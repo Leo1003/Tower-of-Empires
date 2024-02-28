@@ -9,7 +9,6 @@
 					<d2p1:Key>AssetExplorerGeneric</d2p1:Key>
 					<d2p1:Value>
 						<d2p1:string>assets\attrib</d2p1:string>
-						<d2p1:string>assets\mod.png</d2p1:string>
 					</d2p1:Value>
 				</d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
 			</d3p1:ExpandedPaths>
@@ -22,6 +21,7 @@
 	</PluginSettings>
 	<RecentFiles>
 		<History xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+			<d3p1:string>C:\Users\leo88\Documents\Tower-of-Empires\assets\mod.rdo</d3p1:string>
 			<d3p1:string>C:\Users\leo88\OneDrive\文件\Tower of Empires\assets\mod.rdo</d3p1:string>
 			<d3p1:string>C:\Users\leo88\OneDrive\文件\Tower of Empires\assets\mod.png</d3p1:string>
 			<d3p1:string>C:\Users\leo88\OneDrive\文件\Tower of Empires\assets\attrib\Tower of Empires.xml</d3p1:string>

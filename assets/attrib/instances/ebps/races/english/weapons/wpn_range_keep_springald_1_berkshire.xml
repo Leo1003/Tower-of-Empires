@@ -1,0 +1,24 @@
+<instance version="6" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1161111606" List.ParentItemID="1161111606">
+			<instance_reference name="animator_attachments" value="" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\weapon_ext" List.ItemID="-137176455" List.ParentItemID="-137176455">
+			<instance_reference name="weapon" value="weapon\races\english\ranged\weapon_keep_springald_1_berkshire" mod="a1671e9927bb4596a34f973345db45c2" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2122962" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\weapons\wpn_ebps_template_ai" />
+	<variant name="xp3">
+		<list name="extensions">
+			<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1161111606" List.ParentItemID="1161111606">
+				<instance_reference name="animator_attachments" value="" overrideParent="True" />
+			</template_reference>
+			<template_reference name="exts" value="ebpextensions\weapon_ext" List.ItemID="-137176455" List.ParentItemID="-137176455">
+				<instance_reference name="weapon" value="weapon\races\english\ranged\weapon_keep_springald_1_berkshire" mod="a1671e9927bb4596a34f973345db45c2" overrideParent="True" />
+			</template_reference>
+		</list>
+		<uniqueid name="pbgid" value="2122962" />
+		<instance_reference name="parent_pbg" value="ebps\races\core\weapons\wpn_ebps_template_ai" />
+	</variant>
+</instance>

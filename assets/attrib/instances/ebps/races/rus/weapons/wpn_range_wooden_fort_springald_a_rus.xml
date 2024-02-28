@@ -1,0 +1,9 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\weapon_ext" List.ItemID="-137176455" List.ParentItemID="-137176455">
+			<instance_reference name="weapon" value="weapon\races\rus\ranged\weapon_wooden_fort_springald_a_rus" mod="a1671e9927bb4596a34f973345db45c2" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="159298" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\weapons\wpn_siege_outpost_springald" mod="a1671e9927bb4596a34f973345db45c2" />
+</instance>
